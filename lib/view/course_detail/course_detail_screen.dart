@@ -30,7 +30,7 @@ class CourseDetailScreen extends StatelessWidget {
     ];
     final randomTags = List.generate(
       2 + random.nextInt(2),
-      (_) => availableTags[random.nextInt(availableTags.length)],
+          (_) => availableTags[random.nextInt(availableTags.length)],
     ).toSet().toList();
 
     return Scaffold(
@@ -52,7 +52,7 @@ class CourseDetailScreen extends StatelessWidget {
                   borderRadius: BorderRadius.circular(12),
                   child: FadeInImage.assetNetwork(
                     placeholder:
-                        'assets/images/courseplaceholder.png', // 👈 Your default placeholder image
+                    'assets/images/courseplaceholder.png', // 👈 Your default placeholder image
                     image: course['thumbnail'],
                     height: 200,
                     width: double.infinity,
@@ -101,7 +101,7 @@ class CourseDetailScreen extends StatelessWidget {
                 runSpacing: 8,
                 children: List.generate(
                   randomTags.length,
-                  (index) => Chip(
+                      (index) => Chip(
                     label: Text(randomTags[index]),
                     backgroundColor: Colors.deepPurple.shade50,
                     labelStyle: const TextStyle(color: const Color(0xFF0A2A66)),
