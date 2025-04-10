@@ -42,7 +42,7 @@ class CourseListScreen extends StatelessWidget {
                           Positioned.fill(
                             child: FadeInImage.assetNetwork(
                               placeholder:
-                              'assets/images/courseplaceholder.png', // still needed in case image takes time
+                                  'assets/images/courseplaceholder.png', // still needed in case image takes time
                               image: course['thumbnail'] ?? '',
                               fit: BoxFit.fitHeight,
                               imageErrorBuilder: (context, error, stackTrace) {
